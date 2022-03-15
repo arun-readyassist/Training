@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+    <style>
+
+@media only screen and (max-width:575px){
+
+    .pro{
+        font-size:25px;
+        font-weight: lighter;
+    }
+
+    img{
+        width:100px;
+        padding-bottom: 2px;
+    }
+
+    .r3c2{
+        text-align: center;
+        font-size:larger;
+        font-weight: bolder;
+    }
+
+    .r2c3{
+
+        padding-bottom: 10px;
+    }
+
+    .r2c4{
+        padding-bottom: 1cm;
+    }
+
+    .r4c2{
+        text-align: center;
+        font-size:larger;
+        padding-bottom: 10px;
+        font-weight: bolder;
+    }
+
+
+  
+
+    .container-fluid{
+            
+            background-color: rgb(230, 225, 225);
+            color : #002366;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height :1400px;
+        }
+    
+        .row1{
+                font-size: 180%;
+                background-color: rgb(230, 225, 225);
+            }
+    
+            .innerdiv{
+                width :90%;
+                height :auto;
+                background-color : white;
+                border : solid 1px;
+                border-color: hsla(0, 0%, 0%, 0.288);
+                padding-bottom: 10px;
+                }
+    
+                .row2{
+                    font-size: 75%;
+                    border-bottom : solid 1px;
+                    border-color: hsla(0, 0%, 0%, 0.288);
+                }
+    
+                .row3{
+                    border-bottom : solid 1px;
+                    border-color: hsla(0, 0%, 0%, 0.288);
+                }
+    
+                .row4{
+                    border-bottom : solid 1px;
+                    border-color: hsla(0, 0%, 0%, 0.288);
+                }
+    
+               
+    
+                #size{
+                width : 30px;
+                height : 30px;
+                border : solid 1px;
+                font-size: 100%;
+                border-color: hsla(0, 0%, 0%, 0.288); 
+                font-weight: 100; 
+                font-family :Georgia, 'Times New Roman', Times, serif;
+                margin-bottom: 15px; 
+            }
+    
+            #remove{
+                width : 30px;
+                height : 30px;
+                border : solid 1px;
+                font-size: 100%;
+                border-color: hsla(0, 0%, 0%, 0.288);
+                position :relative;  
+                margin-bottom: 15px;         
+            }
+    
+    
+            .button{
+                width : 30px;
+                height : 30px;
+                border : solid 1px;
+                font-size: 100%;
+                border-color: hsla(0, 0%, 0%, 0.288);  
+                margin-bottom: 15px;           
+            }
+    
+            .box{
+                width : 30px;
+                height : 30px;
+                border : solid 1px;
+                font-size: 100%;
+                text-align: center;
+                border-right :none;
+                border-left : none;
+                border-color: hsla(0, 0%, 0%, 0.288);
+    
+            }
+    
+            .add{
+                background-color: #002366;
+                color :white;
+            }
+    
+            d{
+                font-size: 100;
+            }
+    
+            .e{
+                font-size:13px;
+                border : solid 1px;
+                text-align :center;
+                border-color: hsla(0, 0%, 0%, 0.288);
+                width :100%;
+                height:40px;
+    
+            }
+    
+            f{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 120;
+            }
+
+            g{
+            position :relative;
+            top :20%;
+        }
+    
+            .promo{
+        
+        
+            height : 30px;
+            width : 100%;
+            border-color: hsla(0, 0%, 0%, 0.219);
+            border-style:solid;
+            border-width : thin;
+            margin-top: 20px;;
+            }
+    
+            .promobutton{
+        
+            height : 30px;
+            width : 100%;
+            border-color : #001647;
+            background-color : #001647;
+            border-width :thin;
+            color : white;
+            margin-top :5px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+    
+    .promobutton:hover{
+        border-color : #001647;
+        background-color:white;
+        color:black;
+        font-weight : bold;
+        cursor:pointer;
+        font-weight :lighter;
+    
+    }
+    
+    .check{
+        width :100%;
+        height : 30px;
+        background-color : #001647;
+        border-width :thin;
+        color : white;
+        margin-top :15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+        .check:hover{
+    
+        border-color : #001647;
+        background-color:white;
+        color:black;
+        font-weight : bold;
+        cursor:pointer;
+        font-weight :lighter;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+        .container-fluid{
+            
+        background-color: rgb(230, 225, 225);
+        color : #002366;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height :600px;
+        }
+
+        .row1{
+            font-size: 180%;
+            background-color: rgb(230, 225, 225);
+        }
+
+        .innerdiv{
+            width :80%;
+            height :auto;
+            background-color : white;
+            border : solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.288);
+            padding-bottom: 20px;
+            }
+
+            .row2{
+                font-size: 90%;
+                border-bottom : solid 1px;
+                border-color: hsla(0, 0%, 0%, 0.288);
+            }
+
+            .row3{
+                border-bottom : solid 1px;
+                border-color: hsla(0, 0%, 0%, 0.288);
+            }
+
+            .row4{
+                border-bottom : solid 1px;
+                border-color: hsla(0, 0%, 0%, 0.288);
+            }
+
+
+
+           
+
+            #size{
+            width : 30px;
+            height : 30px;
+            border : solid 1px;
+            font-size: 100%;
+            border-color: hsla(0, 0%, 0%, 0.288); 
+            font-weight: 100; 
+            font-family :Georgia, 'Times New Roman', Times, serif;
+        }
+
+        #remove{
+            width : 30px;
+            height : 30px;
+            border : solid 1px;
+            font-size: 100%;
+            border-color: hsla(0, 0%, 0%, 0.288);
+            position :relative;
+            left :30%;            
+        }
+
+
+        .button{
+            width : 30px;
+            height : 30px;
+            border : solid 1px;
+            font-size: 100%;
+            border-color: hsla(0, 0%, 0%, 0.288);            
+        }
+
+        .box{
+            width : 30px;
+            height : 30px;
+            border : solid 1px;
+            font-size: 100%;
+            text-align: center;
+            border-right :none;
+            border-left : none;
+            border-color: hsla(0, 0%, 0%, 0.288);
+
+        }
+
+        .add{
+            background-color: #002366;
+            color :white;
+        }
+
+        d{
+            font-size: larger;
+        }
+
+        .e{
+            font-size:15px;
+            border : solid 1px;
+            text-align :center;
+            border-color: hsla(0, 0%, 0%, 0.288);
+            width :100%;
+            height:40px;
+            margin-bottom: 20px;
+            margin-top: 10px;
+
+        }
+
+        f{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: larger;
+        }
+
+        g{
+            position :relative;
+            top :15%;
+        }
+
+        .promo{
+    
+    
+        height : 30px;
+        width:100%;
+        border-color: hsla(0, 0%, 0%, 0.219);
+        border-style:solid;
+        border-width : thin;
+        }
+
+        .promobutton{
+    
+        height : 30px;
+        width:100%;
+        border-color : #001647;
+        background-color : #001647;
+        border-width :thin;
+        color : white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+.promobutton:hover{
+    border-color : #001647;
+    background-color:white;
+    color:black;
+    font-weight : bold;
+    cursor:pointer;
+    font-weight :lighter;
+
+}
+
+.check{
+    height : 30px;
+    width:100%;
+    background-color : #001647;
+    border-width :thin;
+    color : white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+    .check:hover{
+
+    border-color : #001647;
+    background-color:white;
+    color:black;
+    font-weight : bold;
+    cursor:pointer;
+    font-weight :lighter;
+}
+
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){
+
+    .container-fluid{
+            
+            background-color: rgb(230, 225, 225);
+            color : #002366;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            height :550px;
+            padding-bottom: 20px;
+        }
+    
+        .row1{
+                font-size: 180%;
+                background-color: rgb(230, 225, 225);
+            }
+    
+            .innerdiv{
+                width :90%;
+                height :auto;
+                background-color : white;
+                border : solid 1px;
+                border-color: hsla(0, 0%, 0%, 0.288);
+                padding-bottom: 20px ;
+                }
+    
+                .row2{
+                    font-size: 75%;
+                    border-bottom : solid 1px;
+                    border-color: hsla(0, 0%, 0%, 0.288);
+                }
+    
+                .row3{
+                    border-bottom : solid 1px;
+                    border-color: hsla(0, 0%, 0%, 0.288);
+                }
+    
+                .row4{
+                    border-bottom : solid 1px;
+                    border-color: hsla(0, 0%, 0%, 0.288);
+                }
+    
+               
+    
+                #size{
+                width : 25px;
+                height : 25px;
+                border : solid 1px;
+                font-size: 100%;
+                border-color: hsla(0, 0%, 0%, 0.288); 
+                font-weight: 100; 
+                font-family :Georgia, 'Times New Roman', Times, serif;
+            }
+    
+            #remove{
+                width : 25px;
+                height : 25px;
+                border : solid 1px;
+                font-size: 100%;
+                border-color: hsla(0, 0%, 0%, 0.288);
+                position :relative;
+                left :30%;            
+            }
+    
+    
+            .button{
+                width : 25px;
+                height : 25px;
+                border : solid 1px;
+                font-size: 100%;
+                border-color: hsla(0, 0%, 0%, 0.288);            
+            }
+    
+            .box{
+                width : 25px;
+                height : 25px;
+                border : solid 1px;
+                font-size: 100%;
+                text-align: center;
+                border-right :none;
+                border-left : none;
+                border-color: hsla(0, 0%, 0%, 0.288);
+    
+            }
+    
+            .add{
+                background-color: #002366;
+                color :white;
+            }
+    
+            d{
+                font-size: 100;
+            }
+    
+            .e{
+                font-size:13px;
+                border : solid 1px;
+                text-align :center;
+                border-color: hsla(0, 0%, 0%, 0.288);
+                width :100%;
+                height:40px;
+                margin-bottom: 20px;
+                margin-top: 10px;
+    
+            }
+    
+            f{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 120;
+            }
+
+            g{
+            position :relative;
+            top :15%;
+        }
+    
+            .promo{
+        
+        
+            height : 30px;
+            width : 100%;
+            border-color: hsla(0, 0%, 0%, 0.219);
+            border-style:solid;
+            border-width : thin;
+            }
+    
+            .promobutton{
+        
+            height : 30px;
+            width : 100%;
+            border-color : #001647;
+            background-color : #001647;
+            border-width :thin;
+            color : white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+    
+    .promobutton:hover{
+        border-color : #001647;
+        background-color:white;
+        color:black;
+        font-weight : bold;
+        cursor:pointer;
+        font-weight :lighter;
+    
+    }
+    
+    .check{
+        width :100%;
+        height : 30px;
+        background-color : #001647;
+        border-width :thin;
+        color : white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+        .check:hover{
+    
+        border-color : #001647;
+        background-color:white;
+        color:black;
+        font-weight : bold;
+        cursor:pointer;
+        font-weight :lighter;
+    }
+
+
+}
+
+
+</style>
+    
+</head>
+<body>
+
+    <div class="container-fluid py-4"> 
+
+        <div class="row justify-content-center row1 mb-2">
+
+            <div class="col-md-10 col-sm-10 d-flex justify-content-center">My Shopping cart</div>
+
+        </div>
+
+        <div class="container-fluid innerdiv pt-4">
+
+            <div class="row d-flex d-sm-none justify-content-center pro">
+                Products
+            </div>
+    
+
+            <div class="d-none d-sm-flex row row2 pt-1 pb-3">
+
+                <div class="col-md-2 col-sm-2 r2c1"></div>
+
+                <div class="col-md-3 col-sm-3 col-xs d-flex justify-content-start r2c2">
+                <c>Description</c>
+                </div>
+
+                <div class="col-md-2 col-sm-2 col-xs d-flex justify-content-center r2c3">
+                <c>Size</c>
+                </div>
+
+                <div class="col-md-2 col-sm-2 col-xs r2c4">
+                <c>Quantity</c>
+                </div>
+
+                <div class="col-md-1 col-sm-1 col-xs  r2c5">
+                <c>Remove</c>
+                </div>
+
+                <div class="col-md-2 col-sm-2 col-xs d-flex justify-content-center r2c6">
+                <c>Price</c>
+                </div>
+
+            </div>
+
+            <div class="row pb-4 pt-4 align-items-center row3">
+
+                <div class="col-md-2 col-sm-2 col-xs d-flex justify-content-center r3c1">
+
+                    
+
+                    <img id="vbimg" class="img-fluid " alt="Responsive image" src="vb.png" width="60%" height=auto>
+
+                          
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs r3c2">
+                    <d>Mikasa MV200 RIO Edition</d>
+                </div>
+
+                <l class="d-flex d-sm-none justify-content-center">Size</l>
+
+                <div class="col-md-2 col-sm-2 col-xs d-flex justify-content-center r3c3">
+                    <button id="size">s</button>
+                </div>
+    
+                <div class="col-md-2 col-sm-2 col-xs r3c4">
+
+                    
+
+                        
+                        <div class="row g-0">
+
+                            <l class="d-flex d-sm-none justify-content-center">Quantity</l>
+
+                        <div class="btn-group justify-content-center">
+
+                            <button class = "button add1 add" onclick="add1(),promo()">+</button> 
+
+                            <input id=vbbox class="box" value=0 type=number readonly>
+
+                            <button class = "button sub1 sub" onclick="sub1(),promo()">-</button> 
+
+                        </div>
+                        
+                </div>
+                        
+                </div>
+
+                <l class="d-flex d-sm-none justify-content-center">Remove</l>
+    
+                <div class="d-flex justify-content-center col-sm-1 col-md-1 col-xs r3c5">
+
+                    <button id=remove class="button" onclick="remove1(),total()">×</button>
+
+                </div>
+    
+                <div class="col-md-2 col-sm-2 col-xs d-flex justify-content-center r3c6">
+
+                    <l class="d-flex d-sm-none">Price:</l> <f><b>₹2400</b></f>
+
+                </div>
+    
+
+            </div>
+
+
+            <div class="row pb-4 pt-4 align-items-center row4">
+
+                <div class="col-md-2 col-sm-2 col-xs d-flex justify-content-center r4c1">
+
+                    
+
+                    <img id="padimg" class="img-fluid" alt="Responsive image" src="cap2.png" width=60%  height=auto>
+
+                          
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs r4c2">
+                   <d>Kneepads</d>
+                </div>
+
+                <l class="d-flex d-sm-none justify-content-center">Size</l>
+
+                <div class="col-md-2 col-sm-2 col-xs d-flex justify-content-center r4c3">
+
+                    <button id="size">s</button>
+                </div>
+                
+    
+                <div class="col-md-2 col-sm-2 col-xs r4c4">
+
+                    <div class="row justify-content-center g-0">
+
+                        <l class="d-flex d-sm-none justify-content-center">Quantity</l>
+
+                        <div class="btn-group justify-content-center">
+
+                             <button class = "button add2 add" onclick="add2(),promo()">+</button> 
+
+                            <input id=padbox class="box" value=0 type=number readonly>
+
+                            <button class = "button sub2 sub" onclick="sub2(),promo()">-</button> 
+
+                        </div>
+                        
+                
+                    </div>
+
+                        
+                        
+                </div> 
+                
+                <l class="d-flex d-sm-none justify-content-center">Remove</l>
+
+                <div class="d-flex justify-content-center col-md-1 col-sm-1 col-xs r4c5">
+
+                <button id=remove class="button" onclick="remove2(),total()">×</button>
+
+                </div>
+    
+                <div class="col-md-2 col-sm-2 col-xs d-flex justify-content-center r4c6">
+                    <l class="d-flex d-sm-none">Price:&ensp;</l> <f><b>₹1200</b></f>
+                </div>
+    
+
+            </div>
+
+            <div class="row mt-2 justify-content-between row5">
+
+                <div class="col-md-3 col-sm-3 col-xs-3 r5c1">
+                     <div class ="e"><g>Discount &emsp;&emsp;₹<span id="dc">0</span></g></div> 
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-3 r5c2">
+                    <div class ="e"><g>Delivery &emsp;&emsp;₹<span id="dv">0</span></g></div> 
+                </div>
+    
+                <div class="col-md-3 col-sm-3 col-xs-3 r5c3">
+                    <div class ="e"><g>Subtotal &emsp;&emsp;₹<span id="st">0</span></g></div> 
+                </div>
+    
+                <div class="col-md-3 col-sm-3 col-xs-3 r5c4">
+                    <div class ="e"><g>Total &emsp;&emsp;₹<span id="t">0</g></div> 
+                </div>
+
+            </div>
+
+        
+
+            <div class="row row6">
+
+                <div class="col-md-6 col-sm-6">
+
+                    <input class=promo id=promoid type="text" placeholder="please enter promo code">
+
+                </div>
+
+                <div class="col-md-3 col-sm-3">
+
+                    <button class="promobutton" onclick="promo()">Apply</button>
+                
+                </div>
+
+                <div class="col-md-3 col-sm-3">
+
+                    <button class="check" onclick="redirect()">Checkout</button>
+
+                </div>
+            </div>
+        
+        
+        </div>
+    
+    </div>
+
+
+   
+      
+
+    <script src="bootstrap5/js/bootstrap.js"></script>
+
+</body>
+</html>

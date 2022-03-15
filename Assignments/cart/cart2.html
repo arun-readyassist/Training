@@ -1,0 +1,133 @@
+<head>
+
+    <link rel="stylesheet" href="cart2.css">
+
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    
+</head>
+
+<body>
+        <div class="container-fluid">
+
+            <div class="row">My shopping cart</p>
+
+            <div id="whole">
+
+                <div class="head">
+
+                    <h class="head1">Description</h>
+                    <h class="head2">Size</h>
+                    <h class="head3">Quantity</h>
+                    <h class="head4">Remove</h>
+                    <h class="head5">Price</h>
+                    
+                </div>
+
+                <div>
+
+                    <div class=vbseg>
+
+                    
+                        <img id="vbimg" src="vb.png" width=100 length=100>
+
+                        <div class="producttext head1">
+
+                            Mikasa MV200 Rio <br>Edition
+
+                        </div>
+
+                        <button class="sizebox1 head 2">S</button>
+
+                           
+                    <div class="buttonseg1 head3">
+
+                        <button class = "button sub1" onclick="sub1(),promo()">-</button> 
+
+                        <input id=vbbox class="box" value=0 type=number readonly>
+
+                        <button class = "button add1 add" onclick="add1(),promo()">+</button> 
+                
+                    </div>
+
+                    <button id=remove1 class="button head4" onclick="remove1(),total()">×</button>
+
+                    <h id="vbprice" class="head5">₹2400</h>
+
+                </div>
+
+                <div class=padseg>
+        
+                    <img id=padimg src="cap.png">
+
+                    <div class="producttext">
+
+                        Kneepads
+
+                    </div>
+
+                    <button class="sizebox2">S</button>
+
+                    <div class="buttonseg2">
+
+                        <button class="button sub2" onclick="sub2(),promo()">-</button> 
+
+                        <input id=padbox class=box value=0 type=number readonly>
+
+                        <button class="button add2 add" onclick="add2(),promo()">+</button> 
+            
+                    </div>
+
+                    <button id=remove2 class="button" onclick="remove2(),total()">×</button>
+
+                    <h id="padprice">₹1200</h>
+                </div>
+
+                <div class="end">
+
+                <div class="res">
+                
+                    <div class="st">
+
+                        <p class="subtotalp">Subtotal &emsp;&emsp;₹<span id="st">0</span></p>
+                
+                    </div>
+
+                    <div class="dc">
+
+                        <p class="discount">Discount &emsp;&emsp;₹<span id="dc">0</span></p>
+
+                    </div>
+
+                    <div class="dv">
+
+                        <p class="delivery">Delivery &emsp;&emsp;₹<span id="dv">0</span></p>
+
+                    </div>
+
+                    <div class="tot">
+
+                        <p class="total">Total &emsp;&emsp;₹<span id="t">0</span></p>
+                    
+                    </div>
+
+                </div>
+
+                <p class="gst">total includes 18% of GST</p>
+
+                <button class="check" onclick="redirect()">Checkout</button>
+
+            </div>
+
+            <input class=promo id=promoid type="text" placeholder="please enter promo code">
+
+            <button class="promobutton" onclick="promo()">Apply discount</button>
+
+            <P class="ptext">valid promo code provides 3% of discount</P>
+            </div>
+
+        </div>
+
+
+    </body>
+
+<script src="bootstrap5/js/bootstrap.js"></script>

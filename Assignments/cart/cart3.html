@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+    <style>
+
+@media only screen and (min-width:361px) and (max-width:480px)
+{
+    .container-fluid{
+        background-color: rgb(235, 235, 235);
+        color : #002366;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .row1{
+            text-align: center;
+            font-size: 200%;
+        }
+
+    
+
+
+}
+
+
+@media only screen and (min-width:481px) and (max-width:720px)
+{
+
+        .container-fluid{
+            background-color: rgb(230, 225, 225);
+            height:1500px;
+            color : #002366;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             }
+
+        .head{
+            color : #002366;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size : 190%;
+            
+        }
+
+        .innerdiv{
+            width :95%;
+            height :28%;
+            background-color : white;
+            border : solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.219);
+            
+        }
+
+        .row1{
+            text-align: center;
+            position : relative;
+            top :20px;
+            
+            
+        }
+
+        .row2{
+            font-size:76.8%;
+            font-weight :100;
+            color: #002466d2;
+            height :70px;
+            border-bottom: solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.219);
+        }
+
+        .row3{
+            height:100px;
+            border-bottom: solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.219);
+        }
+
+        .row4{
+            height:100px;
+            border-bottom: solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.219);
+        }
+
+        .row5{
+            height :70px;
+        }
+
+        c{
+            
+        }
+
+        d{
+            font-size: 15px;
+        }
+
+        .e{
+            height : 40px;
+            width : 90%;
+            font-size:12px;
+            border : solid 1px;
+            text-align :center;
+            border-bottom: solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.219);
+
+        }
+
+        f{
+            
+            font-size:15px;
+        }
+
+        g{
+            position :relative;
+            top :10px;
+
+        }
+
+      
+      
+      
+
+        #size{
+            width : 25px;
+            height : 25px;
+            border : solid 1px;
+            font-size: 100%;
+            border-color: hsla(0, 0%, 0%, 0.26);            
+        }
+
+        #remove{
+            width : 25px;
+            height : 25px;
+            border : solid 1px;
+            font-size: 100%;
+            border-color: hsla(0, 0%, 0%, 0.26);
+            position :relative;
+            left :30%;            
+        }
+
+
+        .button{
+            width : 25px;
+            height : 25px;
+            border : solid 1px;
+            font-size: 100%;
+            border-color: hsla(0, 0%, 0%, 0.26);            
+        }
+
+        .box{
+            width : 25px;
+            height : 25px;
+            border : solid 1px;
+            font-size: 100%;
+            text-align: center;
+            border-right :none;
+            border-left : none;
+            border-color: hsla(0, 0%, 0%, 0.219);
+
+        }
+
+        .add{
+            background-color: #002366;
+            color :white;
+        }
+
+        
+
+
+        .r2c1{
+          
+            width : 12.66%;
+        
+
+        }
+
+       
+        .r2c2{
+          
+         width : 20.66%;
+      }
+
+      .r2c3{
+          width : 10.66%;
+          
+      }
+
+      .r2c4{
+          width : 16.66%;
+          text-align: center;
+          
+          
+      }
+
+      .r2c5{
+        width : 16.66%;
+        text-align: center;
+          
+          
+      }
+
+      .r2c6{
+        width : 16.66%;
+          
+          
+      }
+
+      .r3c1{
+        width : 12.66%;
+          
+      }
+
+      .r3c2{
+          font-weight: bolder;
+          width : 20.66%;
+          
+      }
+
+      .r3c3{
+          width : 10.66%;
+      }
+
+      .r3c4{
+          
+          width : 16.66%;
+          background-color: aquamarine;
+      }
+
+      .r3c5{
+
+      }
+
+      .r3c6{
+            font-family :Georgia, 'Times New Roman', Times, serif;
+            font-weight :bolder;
+            width : 16.66%;
+      }
+
+      .r4c1{
+          width : 12.66%;
+      }
+
+      .r4c2{
+        font-weight: bolder;
+        width : 20.66%;
+      }
+
+      .r4c3{
+        width : 10.66%;
+      }
+
+      .r4c4{
+        width : 16.66%;
+        background-color: black;
+      }
+
+      .r4c5{
+
+
+      }
+
+      .r4c6{
+            font-family :Georgia, 'Times New Roman', Times, serif;
+            font-weight :bolder;
+            width : 16.66%;
+      }
+
+     
+
+      .r5c1{
+        border-color: hsla(0, 0%, 0%, 0.219);
+      }
+
+          
+      
+
+      .add{
+          position:relative;
+          left:-5px;
+      }
+
+      .promo{
+    
+    
+    height : 30px;
+    width : 100%;
+    border-color: hsla(0, 0%, 0%, 0.219);
+    border-style:solid;
+    border-width : thin;
+}
+
+.promobutton{
+    
+    height : 30px;
+    width : 100%;
+    border-color : #001647;
+    background-color : #001647;
+    border-width :thin;
+    color : white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.promobutton:hover{
+    border-color : #001647;
+    background-color:white;
+    color:black;
+    font-weight : bold;
+    cursor:pointer;
+    font-weight :lighter;
+
+}
+
+.check{
+    width :100%;
+    height : 30px;
+    background-color : #001647;
+    border-width :thin;
+    color : white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.check:hover{
+
+border-color : #001647;
+background-color:white;
+color:black;
+font-weight : bold;
+cursor:pointer;
+font-weight :lighter;
+}
+
+}
+
+
+@media only screen and (min-width: 721px){
+
+
+            .container-fluid{
+            background-color: rgb(230, 225, 225);
+            height:1500px;
+            color : #002366;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             }
+
+        .head{
+            color : #002366;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size : 190%;
+            
+        }
+
+        .innerdiv{
+            width :95%;
+            height :28%;
+            background-color : white;
+            border : solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.219);
+            
+        }
+
+        .row1{
+            text-align: center;
+            position : relative;
+            top :20px;
+            
+            
+        }
+
+        .row2{
+            font-size:66.8%;
+            height :70px;
+            border-bottom: solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.219);
+        }
+
+        .row3{
+            height:100px;
+            border-bottom: solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.219);
+        }
+
+        .row4{
+            height:100px;
+            border-bottom: solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.219);
+        }
+
+        .row5{
+            height :70px;
+        }
+
+        c{
+            
+        }
+
+        d{
+            font-size: 15px;
+        }
+
+        .e{
+            height : 40px;
+            width : 90%;
+            font-size:12px;
+            border : solid 1px;
+            text-align :center;
+            border-bottom: solid 1px;
+            border-color: hsla(0, 0%, 0%, 0.219);
+
+        }
+
+        f{
+            
+            font-size:15px;
+        }
+
+        g{
+            position :relative;
+            top :10px;
+
+        }
+
+      
+      
+      
+
+        #size{
+            width : 25px;
+            height : 25px;
+            border : solid 1px;
+            font-size: 100%;
+            border-color: hsla(0, 0%, 0%, 0.26);            
+        }
+
+        #remove{
+            width : 25px;
+            height : 25px;
+            border : solid 1px;
+            font-size: 100%;
+            border-color: hsla(0, 0%, 0%, 0.26);
+            position :relative;
+            left :30%;            
+        }
+
+
+        .button{
+            width : 25px;
+            height : 25px;
+            border : solid 1px;
+            font-size: 100%;
+            border-color: hsla(0, 0%, 0%, 0.26);            
+        }
+
+        .box{
+            width : 10px;
+            height : 10px;
+            border : solid 1px;
+            font-size: 100%;
+            text-align: center;
+            border-right :none;
+            border-color: hsla(0, 0%, 0%, 0.219);
+            position : relative;
+            left :-6px;
+
+        }
+
+        .add{
+            background-color: #002366;
+            color :white;
+        }
+        
+
+        
+
+
+        .r2c1{
+          
+            width : 12.66%;
+        
+
+        }
+
+       
+        .r2c2{
+          
+         width : 20.66%;
+      }
+
+      .r2c3{
+          width : 10.66%;
+          
+      }
+
+      .r2c4{
+          width : 16.66%;
+          text-align: center;
+          
+          
+      }
+
+      .r2c5{
+        width : 16.66%;
+        text-align: center;
+          
+          
+      }
+
+      .r2c6{
+        width : 16.66%;
+          
+          
+      }
+
+      .r3c1{
+        width : 12.66%;
+          
+      }
+
+      .r3c2{
+          font-weight: bolder;
+          width : 20.66%;
+          
+      }
+
+      .r3c3{
+          width : 10.66%;
+      }
+
+      .r3c4{
+          
+          width : 16.66%;
+      }
+
+      .r3c5{
+
+      }
+
+      .r3c6{
+            font-family :Georgia, 'Times New Roman', Times, serif;
+            font-weight :bolder;
+            width : 16.66%;
+      }
+
+      .r4c1{
+          width : 12.66%;
+      }
+
+      .r4c2{
+        font-weight: bolder;
+        width : 20.66%;
+      }
+
+      .r4c3{
+        width : 10.66%;
+      }
+
+      .r4c4{
+        width : 16.66%;
+      }
+
+      .r4c5{
+
+
+      }
+
+      .r4c6{
+            font-family :Georgia, 'Times New Roman', Times, serif;
+            font-weight :bolder;
+            width : 16.66%;
+      }
+
+     
+
+      .r5c1{
+        border-color: hsla(0, 0%, 0%, 0.219);
+      }
+
+
+      .add{
+          position:relative;
+          left:-5px;
+      }
+
+      .sub{
+        position:relative;
+          left:-5px;
+      }
+
+      .promo{
+    
+    
+    height : 30px;
+    width : 100%;
+    border-color: hsla(0, 0%, 0%, 0.219);
+    border-style:solid;
+    border-width : thin;
+}
+
+.promobutton{
+    
+    height : 30px;
+    width : 100%;
+    border-color : #001647;
+    background-color : #001647;
+    border-width :thin;
+    color : white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.promobutton:hover{
+    border-color : #001647;
+    background-color:white;
+    color:black;
+    font-weight : bold;
+    cursor:pointer;
+    font-weight :lighter;
+
+}
+
+.check{
+    width :100%;
+    height : 30px;
+    background-color : #001647;
+    border-width :thin;
+    color : white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.check:hover{
+
+border-color : #001647;
+background-color:white;
+color:black;
+font-weight : bold;
+cursor:pointer;
+font-weight :lighter;
+}
+
+}
+
+
+
+
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="container-fluid"> 
+
+        <div class="row align-items-center row1">
+
+            <div class="col-sm head"><br>My Shopping cart<br><br></div>
+
+        </div>
+
+        <div class="container-fluid innerdiv">
+    
+
+            <div class="row row align-items-end py-2 row2">
+
+                <div class="col-3 r2c1">
+                   <c></c>
+                </div>
+             
+                <div class="col-3 r2c2">
+                <c>Description</c>
+                </div>
+
+                <div class="col r2c3">
+                <c>Size</c>
+                </div>
+
+                <div class="col-lg r2c4">
+                <c>Quantity</c>
+                </div>
+
+                <div class="col r2c5">
+                <c>Remove</c>
+                </div>
+
+                <div class="col r2c6">
+                <c>Price</c>
+                </div>
+
+            </div>
+
+            <div class="row align-items-center row3">
+
+                <div class="col-3 r3c1">
+
+                    
+
+                    <img id="vbimg" class="img-fluid " alt="Responsive image" src="vb.png" width="90%" height=auto>
+
+                          
+                </div>
+
+                <div class="col-3 r3c2">
+                    <d>Mikasa MV200 RIO Edition</d>
+                </div>
+    
+                <div class="col r3c3">
+                    <button id="size">s</button>
+                </div>
+    
+                <div class="col r3c4">
+
+                    
+
+                        
+                        <div class="row justify-content-center g-0">
+
+                        <button class = "button add1 add" onclick="add1(),promo()">+</button> 
+
+                        
+
+                        
+
+                        <input id=vbbox class="box" value=0 type=number readonly>
+
+                    
+
+                    
+
+                        <button class = "button sub1 sub" onclick="sub1(),promo()">-</button> 
+
+                        
+                </div>
+                    
+                        
+                </div>
+    
+                <div class="col r3c5">
+                    <button id=remove class="button" onclick="remove2(),total()">×</button>
+                </div>
+    
+                <div class="col r3c6">
+                    <f>₹2400</f>
+                </div>
+    
+
+            </div>
+
+
+            <div class="row align-items-center row4">
+
+                <div class="col-3 r4c1">
+
+                    
+
+                    <img id="padimg" class="img-fluid" alt="Responsive image" src="cap2.png" width=90% height=auto>
+
+                          
+                </div>
+
+                <div class="col-3 r4c2">
+                   <d>Kneepads</d>
+                </div>
+    
+                <div class="col r4c3">
+                    <button id="size">s</button>
+                </div>
+                
+    
+                <div class="col r4c4">
+
+                    <div class="row justify-content-center g-0">
+
+                        
+                        
+
+                        <button class = "button add2 add" onclick="add2(),promo()">+</button> 
+
+                        
+
+                        
+
+                        <input id=padbox class="box" value=0 type=number readonly>
+
+                        
+
+                        
+
+                        <button class = "button sub2 sub" onclick="sub2(),promo()">-</button> 
+
+                        
+                
+                    </div>
+
+                        
+                        
+                </div>
+    
+                <div class="col r4c5">
+                    <button id=remove class="button" onclick="remove2(),total()">×</button>
+                </div>
+    
+                <div class="col r4c6">
+                    <f>₹1200</f>
+                </div>
+    
+
+            </div>
+
+            <div class="row align-items-center g-0 row5">
+
+                <div class="col r5c1">
+                     <div class ="e"><g>Discount &emsp;&emsp;₹<span id="dc">0</span></g></div> 
+                </div>
+
+                <div class="col r5c2">
+                    <div class ="e"><g>Delivery &emsp;&emsp;₹<span id="dv">0</span></g></div> 
+                </div>
+    
+                <div class="col r5c3">
+                    <div class ="e"><g>Subtotal &emsp;&emsp;₹<span id="st">0</span></g></div> 
+                </div>
+    
+                <div class="col r5c4">
+                    <div class ="e"><g>Total &emsp;&emsp;₹<span id="t">0</g></div> 
+                </div>
+
+            </div>
+
+            <div class="row row6">
+
+                <div class="col-6 disc">
+                    <input class=promo id=promoid type="text" placeholder="please enter promo code">
+                </div>
+                <div class="col discbutton">
+                    <button class="promobutton" onclick="promo()">Apply</button>
+                </div>
+
+                <div class="col checkout">
+                    <button class="check" onclick="redirect()">Checkout</button>
+                </div>
+            </div>
+        
+        
+        </div>
+    
+    </div>
+
+
+   
+      
+
+    <script src="bootstrap5/js/bootstrap.js"></script>
+
+</body>
+</html>

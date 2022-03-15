@@ -1,0 +1,59 @@
+<head>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <div class="whole">
+    <div class="vb">
+
+        <img class= "vbimg" src="vb.png" width=190 length=190><br><br>
+
+        <h class="price"><span class = balltext >Mikasa MVA200</span><br><br><span class="cost1" style="font-family:Georgia, 'Times New Roman', Times, serif;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;₹2400</span></h><br><br><br>
+
+       <div class="seg1"><button class="button one minus" id=s1 onclick="sub1(),total()">-</button> 
+
+        <input  class = "box" value=0 id=vb type=number width="48" height="48" readonly>
+
+        <button class="button two plus" id =a1 onclick="add1(),total()">+</button></div>
+
+    </div>
+
+    <div class="pad">
+
+        <img class="padimg" src="cap.png"  width=295px height=195px><br><br>
+
+        <h class="price"><span class="kneetext"> Kneepads</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-family:Georgia, 'Times New Roman', Times, serif;">₹1200</span></h><br><br>
+
+        <div class=" seg2"><button class="button three minus" id=s2 onclick="sub2(),total()">-</button> 
+
+        <input class ="box" value=0 id=pump type=number readonly>
+    
+        <button class="button four plus" id=a2 onclick="add2(),total()">+</button></div>
+
+    </div>
+    <div class="result">
+
+    <div class="stotal">
+
+    <p>SUBTOTAL : ₹<span id="st">0</span></p>
+
+    </div>
+
+    <div>
+
+    <p>TOTAL : <input value=0 id=t type=number readonly></p>
+
+    </div>
+
+    <div>
+
+    <button class="check" onclick="redirect()">CHECKOUT</button>
+
+    </div>
+
+
+    </div>
+    </div>
+</body>
+
+<script src="cart.js"></script>
