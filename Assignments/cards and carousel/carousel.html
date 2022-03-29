@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel</title>
+    <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+    <style>
+
+
+@media only screen and (max-width:575px){
+    
+    *{
+            font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color :rgb(83, 74, 74);
+        }
+
+  
+        .card-title{
+            font-size:x-large;
+            font-weight :100;
+            margin-left:20px;
+        }
+
+        .card-text{
+         padding-left:30px; 
+         padding-right:100px;   
+        }
+
+        .pricetext{
+            padding-left:30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .cartbtn{
+            background-color:#b96ab3;
+            color:white;
+            border :none;
+            font-size :small;
+            width :90px;
+            height :35px;
+            margin-left:20px;
+        }
+
+        .dropdown{
+            border-color:#a38fa0;
+            color:#a38fa0;
+            font-size : 12px;
+            width :90px;
+            height :35px;
+            margin-left:17px;
+            text-align: center;
+            border-width: 2px;
+        }
+
+        .slider1{
+            width :20px;
+            height :20px;
+        }
+
+        .cart{
+            border :none;
+           
+        }
+
+        .cartimg{
+           width: 30px;
+           
+        }
+
+        .navtext{
+            font-size:small;
+        }
+
+        .imag{
+            width : 100px;;
+            height :280px;
+        }
+
+        ul{
+            font-size:small;
+            font-weight: bold;
+        }
+
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){
+
+        *{
+            font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color :rgb(83, 74, 74);
+        }
+
+  
+        .card-title{
+            font-size:x-large;
+            font-weight :100;
+            margin-left:20px;
+        }
+
+        .card-text{
+         padding-left:30px; 
+         padding-right:100px;   
+        }
+
+        .pricetext{
+            padding-left:30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .cartbtn{
+            background-color:#b96ab3;
+            color:white;
+            border :none;
+            font-size :small;
+            width :90px;
+            height :35px;
+            margin-left:20px;
+        }
+
+        .dropdown{
+            border-color:#a38fa0;
+            color:#a38fa0;
+            font-size : 12px;
+            width :90px;
+            height :35px;
+            margin-left:17px;
+            text-align: center;
+            border-width: 2px;
+        }
+
+        .slider1{
+            width :20px;
+            height :20px;
+        }
+
+        .cart{
+            border :none;
+           
+        }
+
+        .cartimg{
+           width: 30px;
+           position :relative;
+           left: 400%;
+           
+        }
+
+        .navtext{
+            font-size:small;
+            font-weight: bolder;
+        }
+
+        .imag{
+            width : 50px;
+            height :auto;
+        }
+      
+        ul{
+            font-size:small;
+            font-weight: bold;
+        }
+
+    }
+
+    @media only screen and (min-width: 768px){
+
+        
+        *{
+            font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color :rgb(83, 74, 74);
+        }
+
+        .card{
+            height : 550px;
+        }
+
+  
+        .card-title{
+            font-size:x-large;
+            font-weight :100;
+            margin-left:20px;
+        }
+
+        .card-text{
+         padding-left:30px; 
+         padding-right:100px;   
+        }
+
+        .pricetext{
+            padding-left:30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        .cartbtn{
+            background-color:#b96ab3;
+            color:white;
+            border :none;
+            font-size :small;
+            width :90px;
+            height :35px;
+            margin-left:20px;
+        }
+
+        .dropdown{
+            border-color:#a38fa0;
+            color:#a38fa0;
+            font-size : 12px;
+            width :90px;
+            height :35px;
+            margin-left:17px;
+            text-align: center;
+            border-width: 2px;
+        }
+
+        .slider1{
+            width :20px;
+            height :20px;
+        }
+
+        .cart{
+            border :none;
+           
+        }
+
+        .cartimg{
+           width: 30px;
+           
+        }
+
+        ul{
+            font-size:small;
+            font-weight: bold;
+        }
+    }
+        
+
+    </style>
+
+
+<body>
+
+    <div class="container-fluid py-5" style="width:90%">
+
+        <div class="card shadow-lg p-3">
+
+            <div class="row pb-4">
+
+                <div class="navbar navbar-expand-sm navbar-light">
+                    <span class="navbar-brand">
+                      Three dots
+                    </span>
+              
+                    <button type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" 
+                    class="navbar-toggler" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="toggle navigation">
+              
+                    <span class="navbar-toggler-icon"></span>
+
+                    </button>
+              
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <a href="#"class="nav-link">
+                            specs
+                          </a>
+                        </li>
+              
+                        <li class="nav-item active">
+                          <a href="#"class="nav-link">
+                            Products
+                          </a>
+                        </li>
+              
+                        <li class="nav-item active">
+                          <a href="#"class="nav-link">
+                            contact
+                          </a>
+                        </li>
+              
+                        <li class="cartlist">
+                        <button class="cart"><img class="cartimg" src="cart.png"></button>
+                        </li>
+              
+                      </ul>
+
+                    </div>
+                  </div>
+            
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-6">
+                    
+    
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 card-title pb-1 ">
+                            Laptop for the future
+                        </div>
+                    </div>
+
+                    <div class="row card-text pb-4">
+                       The new 14 inch bezeless display offering a 4k display with touch screen
+                    </div>
+
+                    <div class="row pb-3 pricetext">
+                        $900
+                    </div>
+
+                    <div class="row pb-5">
+
+                        <div class="btn-group pb-5">
+
+                            <select id="size" class="dropdown" name="size">
+
+                                <option value="13inch">13 INCH</option>
+                                <option value="17inch">17 INCH</option>
+                                <option value="21inch">21 INCH</option>
+
+                            </select>
+                        
+                            <button class="cartbtn">Add To Cart</button>
+
+                        </div>  
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6 col-md-6">
+                    <br><br><br>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="1.jpg" class="d-block w-100 imag">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="2.jpg" class="d-block w-100 imag">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="3.jpg" class="d-block w-100 imag">
+                          </div>
+                        </div>
+                      </div>
+                  
+                </div>
+
+            </div>
+       
+        </div>
+   
+    </div>
+
+
+    
+
+    <script src="bootstrap5/js/bootstrap.js"></script>
+
+</body>
