@@ -87,6 +87,33 @@
             font-weight: bold;
         }
 
+        .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px; /* change width */
+    height: 10px; /* change height */
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: black;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%;  /* add border-radius */
+    position :relative;
+    bottom:-50px;
+    }
+
+    .carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
 }
 
 @media only screen and (min-width:576px) and (max-width:767px){
@@ -166,9 +193,68 @@
             font-weight: bold;
         }
 
+        .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px; /* change width */
+    height: 10px; /* change height */
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: black;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%;  /* add border-radius */
+    position :relative;
+    bottom:-50px;
+    left :-20%;
+    }
+
+    .carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
+        
+
     }
 
     @media only screen and (min-width: 768px){
+
+        .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px; /* change width */
+    height: 10px; /* change height */
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: black;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%;  /* add border-radius */
+    position :relative;
+    bottom:-50px;
+    left :-20%;
+    }
+
+    .carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
 
         
         *{
@@ -345,16 +431,20 @@
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         </div>
-                        <div class="carousel-inner">
+                        <div class="carousel-inner text-center" style="width:75%">
                           <div class="carousel-item active">
-                            <img src="1.jpg" class="d-block w-100 imag">
+                            <img src="8.png" class="d-block w-100 imag">
                           </div>
                           <div class="carousel-item">
-                            <img src="2.jpg" class="d-block w-100 imag">
+                            <img src="7.png" class="d-block w-100 imag">
                           </div>
                           <div class="carousel-item">
-                            <img src="3.jpg" class="d-block w-100 imag">
+                            <img src="9.png" class="d-block w-100 imag">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="10.png" class="d-block w-100 imag">
                           </div>
                         </div>
                       </div>
