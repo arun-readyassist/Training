@@ -35,6 +35,8 @@
         .pricetext{
             padding-left:30px;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:x-large;
+            font-weight :bold;
         }
         
         .cartbtn{
@@ -138,6 +140,8 @@
         .pricetext{
             padding-left:30px;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:x-large;
+            font-weight :bold;
         }
         
         .cartbtn{
@@ -145,7 +149,7 @@
             color:white;
             border :none;
             font-size :small;
-            width :90px;
+            width :100px;
             height :35px;
             margin-left:20px;
         }
@@ -154,7 +158,7 @@
             border-color:#a38fa0;
             color:#a38fa0;
             font-size : 12px;
-            width :90px;
+            width :100px;
             height :35px;
             margin-left:17px;
             text-align: center;
@@ -178,10 +182,7 @@
            
         }
 
-        .navtext{
-            font-size:small;
-            font-weight: bolder;
-        }
+       
 
         .imag{
             width : 50px;
@@ -255,15 +256,27 @@
   height:360px;
 }
 
+.carousel-item img {
+    min-width: 90%;
+    height: auto;
+}
+
 
         
         *{
             font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color :rgb(83, 74, 74);
+            background-color: transparent;
         }
 
         .card{
             height : 550px;
+            background-color: transparent;
+            overflow: hidden;
+        }
+
+        .container-fluid{
+            background-color: transparent;
         }
 
   
@@ -271,6 +284,7 @@
             font-size:x-large;
             font-weight :100;
             margin-left:20px;
+            padding-top :60px;
         }
 
         .card-text{
@@ -281,6 +295,8 @@
         .pricetext{
             padding-left:30px;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size:x-large;
+            font-weight :bold;
         }
         
         .cartbtn{
@@ -288,7 +304,7 @@
             color:white;
             border :none;
             font-size :small;
-            width :90px;
+            width :100px;
             height :35px;
             margin-left:20px;
         }
@@ -297,7 +313,7 @@
             border-color:#a38fa0;
             color:#a38fa0;
             font-size : 12px;
-            width :90px;
+            width :100px;
             height :35px;
             margin-left:17px;
             text-align: center;
@@ -324,6 +340,38 @@
             font-weight: bold;
         }
     }
+
+    .background{
+        position :relative;
+        left :170px;
+        top :-120px;
+    }
+
+    .abc{
+    width :13cm;
+    height :13cm;
+    border-radius:50%;
+  background-image : linear-gradient(#ebeaf2,#c6b5dc);
+  position :relative;
+  left:40%;
+
+  }
+
+  .abcd{
+    width :7cm;
+    height :7cm;
+    border-radius:50%;
+    background-image : linear-gradient(#ebeaf2,#c6b5dc);
+    position :relative;
+    top:-230px;
+    left :30%;
+    opacity : 100%;
+    mix-blend-mode:color-burn;
+  }
+
+  .content{
+      position :absolute;
+  }
         
 
     </style>
@@ -331,10 +379,19 @@
 
 <body>
 
+    
+
     <div class="container-fluid py-5" style="width:90%">
+
+        
 
         <div class="card shadow-lg p-3">
 
+            <div class="background">
+                <p  class="abc"></p>
+                <p  class="abcd"></p>
+            </div>
+            <div CLASS="content">
             <div class="row pb-4">
 
                 <div class="navbar navbar-expand-sm navbar-light">
@@ -374,8 +431,8 @@
                           </a>
                         </li>
               
-                        <li class="cartlist">
-                        <button class="cart"><img class="cartimg" src="cart.png"></button>
+                        <li class="cartlist justify-content-end">
+                        <button class="cart justify-content-end"><img class="cartimg justify-content-end" src="cart.png"></button>
                         </li>
               
                       </ul>
@@ -391,7 +448,7 @@
                     
     
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 card-title pb-1 ">
+                        <div class="col-sm-12 col-md-12 card-title">
                             Laptop for the future
                         </div>
                     </div>
@@ -424,8 +481,7 @@
 
                 </div>
 
-                <div class="col-sm-6 col-md-6">
-                    <br><br><br>
+                <div class="col-sm-6 col-md-6 d-flex align-items-start justify-content-center">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -433,7 +489,7 @@
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                         </div>
-                        <div class="carousel-inner text-center" style="width:75%">
+                        <div class="carousel-inner" style="width:75%">
                           <div class="carousel-item active">
                             <img src="8.png" class="d-block w-100 imag">
                           </div>
@@ -452,7 +508,7 @@
                 </div>
 
             </div>
-       
+          </div>
         </div>
    
     </div>
