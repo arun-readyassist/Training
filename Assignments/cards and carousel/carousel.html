@@ -114,7 +114,7 @@
     border-radius: 100%;  /* add border-radius */
     position :relative;
     bottom:-50px;
-    left : 21%;
+    
     }
 
     
@@ -130,6 +130,7 @@
 
     .carcol{
         padding-top :75px;
+      
     }
 
     .carousel-indicators [data-bs-target] {
@@ -152,7 +153,7 @@
     border-radius: 100%;  /* add border-radius */
     position :relative;
     bottom:-50px;
-    left :-20%;
+    left :-10%;
     }
 
     .carousel-inner > .item > img {
@@ -231,6 +232,7 @@
 
         .cart{
             border :none;
+      
            
         }
 
@@ -279,9 +281,11 @@
   }
 
   .imag{
-            max-width : 90px;;
+            max-width : 50px;;
             max-height :180px;
         }
+
+  
 
 }
 
@@ -290,6 +294,11 @@
 
 
     @media only screen and (min-width: 768px){
+
+      .carcol{
+        padding-top :25px;
+      
+    }
 
         
 
@@ -313,7 +322,7 @@
     border-radius: 100%;  /* add border-radius */
     position :relative;
     bottom:-50px;
-    left :-20%;
+    left :-3%;
     }
 
     .carousel-inner > .item > img {
@@ -432,11 +441,42 @@
     top:-230px;
     left :30%;
     opacity : 100%;
-    mix-blend-mode:color-burn;
   }
 
   .content{
       position :absolute;
+  }
+
+  .cd{
+    position :relative;
+    top :7px;
+  }
+  .cde{
+  width :25px;
+    height :25px;
+    border-radius:50%;
+  background-image : linear-gradient(#ebeaf2,#c6b5dc);
+  position :relative;
+  left : 10px;
+
+  }
+  .cdef{
+    width :25px;
+    height :25px;
+    border-radius:50%;
+  background-image : linear-gradient(#ebeaf2,#c6b5dc);
+  position :relative;
+
+  }
+
+  .cdefg{
+    width :25px;
+    height :25px;
+    border-radius:50%;
+  background-image : linear-gradient(#ebeaf2,#c6b5dc);
+  position :relative;
+  right :10px;
+
   }
         
 
@@ -461,6 +501,19 @@
             <div class="row pb-4">
 
                 <div class="navbar navbar-expand-sm navbar-light">
+
+                    <span>
+
+                      <div class="cd d-flex">
+
+                        <p  class="cde"></p>
+                        <p  class="cdef"></p>
+                        <p class="cdefg"></p>
+                  
+                      </div>
+
+                    </span>
+
                     <span class="navbar-brand">
                       Three dots
                     </span>
@@ -497,8 +550,8 @@
                           </a>
                         </li>
               
-                        <li class="cartlist justify-content-end">
-                        <button class="cart justify-content-end"><img class="cartimg justify-content-end" src="cart.png"></button>
+                        <li class="cartlist">
+                        <button class="cart"><img class="cartimg" src="cart.png"></button>
                         </li>
               
                       </ul>
@@ -524,7 +577,7 @@
                     </div>
 
                     <div id="carouselExampleIndicators" class="carousel slide d-sm-none" data-bs-ride="carousel">
-                        <div class="carousel-indicators justify-content-start">
+                        <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
