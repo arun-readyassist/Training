@@ -133,29 +133,37 @@
 
         .brands{
           background-image : linear-gradient(#fecc33,#fbeec7);
-          width:100%;
+          width:110%;
+          padding-left:30px;
+          padding-top:20px;
+          border-radius :15px;
+          position:relative;
+          left:-3%;
+          margin-top:20px;
+          height:160px;
+        
         }
 
         .disney{
-          width:140px;
-          height:60px;
+          width:80px;
+          height:35px;
         }
 
         .amazon{
-          width:140px;
-          height:40px;
+          width:80px;
+          height:22px;
         }
         .accenture{
-          width:110px;
-          height:30px;
+          width:90px;
+          height:25px;
         }
         .nike{
-          width:140px;
-          height:50px;
+          width:80px;
+          height:30px;
         }
         .sony{
-          width:145px;
-          height:30px;
+          width:80px;
+          height:15px;
         }
 
         .card2{
@@ -172,6 +180,11 @@
         .endorsement{
           padding-top : 80px;
           line-height:18px;
+        }
+
+        .card3{
+          width :50%;
+          aspect-ratio: 1 / 1;
         }
 
   
@@ -361,26 +374,33 @@
         </div>
 
         <div class="row brands">
-          
-              <P3>Trusted by more of India's best <br> service providers</P3>
+              <div class="col-md-3 align-self-center">
+              <P3 style="font-size:13px; font-weight:bolder;">Trusted by more of India's best service providers</P3>
+              </div>
+              <div class="col-md-9 d-flex justify-content-around align-self-center">
               <img class="disney" src="disney.png">
-              <img class="amazon" src="amazon.png">
               <img class="accenture" src="accenture.png">
-              <img class="sony" src="sony.png">
               <img class="nike" src="nike.png">
-
-              <img class="disney" src="disney.png">
               <img class="amazon" src="amazon.png">
-              <img class="accenture" src="accenture.png">
               <img class="sony" src="sony.png">
-              <img class="nike" src="nike.png">
+              
+              </div>
+              <div class="d-none d-sm-none d-md-flex col-md-9 justify-content-around align-self-center">
+                <img class="disney" src="disney.png">
+                <img class="accenture" src="accenture.png">
+                <img class="nike" src="nike.png">
+                <img class="amazon" src="amazon.png">
+                <img class="sony" src="sony.png">
+              </div>
+              
 
         </div>
 
         <div class="row">
           <div class="col-md-3 col-sm-6">
-            <div class="card bg-dark">
+            <div class="card card 3 bg-dark">
               <div class="card-body">
+                <img src="profile.png" style="width:70px; position : relative; top:-20px;"><br>
                 <h class="card-title card2">
                   5000+<br>
                   <span class="card2text">Service Partners</span>
@@ -437,6 +457,8 @@
         <div class="col-md-4 col-sm-6">
           <div class="card">
             <div class="card-body" style="text-align:center;">
+
+              
               "orem ipsum dolor sit amet,consectetur adipiscing elit. Nunc maximus, nulla ut"
 
             </div>
