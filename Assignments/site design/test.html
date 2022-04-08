@@ -1,67 +1,94 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href= 
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      
-          <style>
-            /*Empty checkbox*/
-            .k-checkbox {
-              background: green;
-            }
+      <style> 
       
-            /*Checked checkbox*/
-            .k-checkbox:checked {
-              background: red;
-              color: white;
-            }
+        /* Assign full width inputs*/ 
+        input[type=text], 
+        input[type=password] { 
+            width: 100%; 
+            padding: 12px 40px; 
+            margin: 8px 0; 
+            display: inline-block; 
+            border: 1px solid #ccc; 
+            box-sizing: border-box; 
+        } 
+          
+        /* Set a style for the buttons*/ 
+        button { 
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 14px 20px; 
+            margin: 8px 0; 
+            border: none; 
+            cursor: pointer; 
+            width: 100%; 
+        } 
+  
+        /* Set a hover effect for the button*/ 
+        button:hover { 
+            opacity: 0.8; 
+        } 
+  
+        /* Set extra style for the cancel button*/ 
+        .container { 
+            padding: 16px; 
+        } 
       
-      
-            /*Additional Styling For Example*/
-            .fieldlist {
-              margin: 0 0 -1em;
-              padding: 0;
-            }
-      
-            .fieldlist li {
-              list-style: none;
-              padding-bottom: 1em;
-            }
-          </style>
-          <body>
-      
-          <div id="example">
-            <h4>Choose Extra Equipment</h4>
-            <ul class="fieldlist">
-              <li>
-                <input type="checkbox" id="eq1" class="k-checkbox" checked="checked">
-                <label class="k-checkbox-label" for="eq1">Rear side airbags</label>
-              </li>
-              <li>
-                <input type="checkbox" id="eq2" class="k-checkbox" checked="checked" disabled="disabled">
-                <label class="k-checkbox-label" for="eq2">Leather trim</label>
-              </li>
-              <li>
-                <input type="checkbox" id="eq3" class="k-checkbox">
-                <label class="k-checkbox-label" for="eq3">Luggage compartment cover</label>
-              </li>
-              <li>
-                <input type="checkbox" id="eq4" class="k-checkbox">
-                <label class="k-checkbox-label" for="eq4">Heated front and rear seats</label>
-              </li>
-              <li>
-                <input type="checkbox" id="eq5" class="k-checkbox">
-                <label class="k-checkbox-label" for="eq5">Dual-zone air conditioning</label>
-              </li>
-              <li>
-                <input type="checkbox" id="eq6" class="k-checkbox">
-                <label class="k-checkbox-label" for="eq6">Rain sensor</label>
-              </li>
-              <li>
-                <input type="checkbox" id="eeeeq4" class="k-checkbox" disabled="disabled">
-                <label class="k-checkbox-label" for="eeeeq4">Towbar preparation</label>
-              </li>
-            </ul>
-          </div>  
+        .fontuser {
+            position: relative;
+        }
+          
+        .fontuser i{
+            position: absolute;
+            left: 15px;
+            top: 40px;
+            color: gray;
+        }
+          
+        .fontpassword {
+            position: relative;
+        }
+          
+        .fontpassword i{
+            position: absolute;
+            left: 15px;
+            top: 40px;
+            color: gray;
+        }
+    </style> 
+</head>
+  
+<body> 
+    <div class="container"> 
+        <div class="fontuser">
+            <label><b>Username</b></label> 
+            <input type="text" 
+                    placeholder="Enter Username"
+                    name="uname" required> 
+            <i class="fa fa-user fa-lg"></i>
+        </div>
+          
+        <div class="fontpassword">
+            <label><b>Password</b></label> 
+            <input type="password"
+                    placeholder="Enter Password"
+                    name="psw" required> 
+            <i class="fa fa-key fa-lg"></i>
+        </div>     
+          
+        <button type="submit">Login</button> 
+        <input type="checkbox" checked="checked">
+                Remember me 
+    </div> 
         
    
 
