@@ -6,142 +6,166 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <link rel="stylesheet" href= 
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     
-      <style> 
-      
-        /* Assign full width inputs*/ 
-        input[type=text], 
-        input[type=password] { 
-            width: 100%; 
-            padding: 12px 40px; 
-            margin: 8px 0; 
-            display: inline-block; 
-            border: 1px solid #ccc; 
-            box-sizing: border-box; 
-        } 
-          
-        /* Set a style for the buttons*/ 
-        button { 
-            background-color: #4CAF50; 
-            color: white; 
-            padding: 14px 20px; 
-            margin: 8px 0; 
-            border: none; 
-            cursor: pointer; 
-            width: 100%; 
-        } 
-  
-        /* Set a hover effect for the button*/ 
-        button:hover { 
-            opacity: 0.8; 
-        } 
-  
-        /* Set extra style for the cancel button*/ 
-        .container { 
-            padding: 16px; 
-        } 
-      
-        .fontuser {
-            position: relative;
-        }
-          
-        .fontuser i{
-            position: absolute;
-            left: 15px;
-            top: 40px;
-            color: gray;
-        }
-          
-        .fontpassword {
-            position: relative;
-        }
-          
-        .fontpassword i{
-            position: absolute;
-            left: 15px;
-            top: 40px;
-            color: gray;
-        }
-    </style> 
-</head>
-  
-<body> 
 
-    
-   .,<!DOCTYPE html>
-   <html lang="en">
-   
-   <head>
-       <title>How to make horizontal
-       scrollable in a bootstrap row?</title>
-   
-       <meta charset="utf-8">
-       <meta name="viewport"
-           content="width=device-width, initial-scale=1">
-   
-       <link rel="stylesheet"
-           href=
-   "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-       <style>
-           /* The heart of the matter */
-           
-           .horizontal-scrollable > .row {
-               overflow-x: auto;
-               white-space: nowrap;
-           }
-           
-           .horizontal-scrollable > .row > .col-xs-4 {
-               display: inline-block;
-               float: none;
-           }
-           /* Decorations */
-           
-           .col-xs-4 {
-               color: white;
-               font-size: 24px;
-               padding-bottom: 20px;
-               padding-top: 18px;
-           }
-           
-           .col-xs-4:nth-child(2n+1) {
-               background: green;
-           }
-           
-           .col-xs-4:nth-child(2n+2) {
-               background: black;
-           }
-       </style>
-   </head>
-   
-   <body>
-       <center>
-           <div class="container">
-   
-               <h1 style="text-align:center;color:green;">
-               GeeksforGeeks
-           </h1>
-               <h3>
-               To make horizontal scrollable in a bootstrap row?
-           </h3>
-               <div class="container horizontal-scrollable">
-                   <div class="row text-center">
-                       <div class="col-xs-4">1</div>
-                       <div class="col-xs-4">2</div>
-                       <div class="col-xs-4">3</div>
-                       <div class="col-xs-4">4</div>
-                       <div class="col-xs-4">5</div>
-                       <div class="col-xs-4">6</div>
-                       <div class="col-xs-4">7</div>
-                   </div>
-               </div>
-           </div>
-       </center>
-   </body>
-   
-   </html>
-   
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px; /* change width */
+    height: 10px; /* change height */
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: black;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%;  /* add border-radius */
+    position :relative;
+    bottom:-50px;
+    left :-3%;
+    }
+
+    .carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
+.carousel-item img {
+    min-width: 90%;
+    height: auto;
+}    
+
+    </style>
+  </head>
+  
+  <body>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner" role="listbox" style=" width:300px;">
+          <div class="carousel-item active">
+            <div class="col-md-4 pb-5">
+                <div class="card card3">
+                  <div class="card-body" style="text-align:center;">
+      
+                      <div>
+                      <img src="profile2.png" style="width:60px; margin-right:10px; padding-bottom: 10px;;">
+                      </div>
+                      <div>
+                        <h style="font-size:16px; font-weight:bold">Vimal Singh SV</h>
+                        <p style="font-size:small; font-weight:600; color:rgb(116, 111, 111)">Founder & CEO<br>ReadyAssist</p>
+                      </div>
+      
+                      <div class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                      </div>
+                    
+      
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4 pb-5">
+                <div class="card card3">
+                  <div class="card-body" style="text-align:center;">
+      
+                      <div>
+                      <img src="profile2.png" style="width:60px; margin-right:10px; padding-bottom: 10px;;">
+                      </div>
+                      <div>
+                        <h style="font-size:16px; font-weight:bold">Vijay Sambamurthi</h>
+                        <p style="font-size:small; font-weight:600; color:rgb(116, 111, 111)">Founder & Managing Partner<br>Lexygen</p>
+                      </div>
+      
+                      <div class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                      </div>
+                    
+      
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4 pb-5">
+                <div class="card card3">
+                  <div class="card-body" style="text-align:center;">
+      
+                      <div>
+                      <img src="profile2.png" style="width:60px; margin-right:10px; padding-bottom: 10px;;">
+                      </div>
+                      <div>
+                        <h style="font-size:16px; font-weight:bold">Vivek Subramaniam</h>
+                        <p style="font-size:small; font-weight:600; color:rgb(116, 111, 111)">Founder & CEO<br>AltLifeLab</p>
+                      </div>
+      
+                      <div class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                      </div>
+                    
+      
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="col-md-4">
+                <div class="card card3">
+                  <div class="card-body" style="text-align:center;">
+      
+                      <div>
+                      <img src="profile2.png" style="width:60px; margin-right:10px; padding-bottom: 10px;;">
+                      </div>
+                      <div>
+                        <h style="font-size:16px; font-weight:bold">Satish Grampurohit</h>
+                        <p style="font-size:small; font-weight:600; color:rgb(116, 111, 111)">Angel Inverstor & Advisor<br>&nbsp;</p>
+                      </div>
+      
+                      <div class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                      </div>
+                    
+      
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

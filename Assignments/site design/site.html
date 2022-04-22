@@ -21,6 +21,44 @@
 
     @media only screen and (max-width:575px){
 
+      .yellowimg{
+        width:30px;
+        height:30px;
+      }
+
+      .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px; /* change width */
+    height: 10px; /* change height */
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: black;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+    border-radius: 100%;  /* add border-radius */
+    position :relative;
+    bottom:-50px;
+    left :-3%;
+    }
+
+    .carousel-inner > .item > img {
+  width:640px;
+  height:360px;
+}
+
+.carousel-item img {
+    min-width: 90%;
+    height: auto;
+}    
+
       .disney{
           width:50px;
           height:30px;
@@ -162,6 +200,14 @@ border:none;
         border-radius:7px;
       }
 
+      .endi{
+        background-color: white;
+        width:15%;
+        border-radius:7px;
+        height:150px;
+        padding-top:30px;
+      }
+
       .enddiv{
         background-image: linear-gradient(to bottom, white 100px,black 100px);
       }
@@ -173,9 +219,9 @@ border:none;
       }
 
       .container-fluid{
-        width:90%;
+        width:100%;
         font-family: 'Fira Sans', sans-serif;
-        background-color: #ffffff;
+        background-color: #f3eeea;
         
       }
 
@@ -195,6 +241,7 @@ border:none;
         .subbtn{
             height :40px;
             left : 75%;
+            top:18px;
             font-size: 13px;
             width:140px;
             height : 30px;
@@ -315,7 +362,6 @@ border:none;
           color:white;
           font-size: 148%;
           position:relative;
-          left:20%;
         }
 
         .card2text{
@@ -373,7 +419,8 @@ border:none;
           font-size:13px;
 
           }
-        
+          
+
 
   
 
@@ -384,7 +431,9 @@ border:none;
 
     <div class="container-fluid">
 
-      <div style="background:#fff9e7; padding-left:50px; padding-right:50px;">
+      <div class="innerdiv">
+
+      <div style="background:#fff9e7; padding-left:20px;">
         <div class="row row1">
             <div class="navbar navbar-expand-sm navbar-light">
 
@@ -434,7 +483,7 @@ border:none;
               </div>
         </div>
 
-        <div class="row pt-5">
+        <div class="row row2 pt-5">
 
             <div class="col-sm-6">
                 <p1>24/7 onspot <br> break-down support</p1><br><br>
@@ -461,9 +510,10 @@ border:none;
           
         </div>
 
-        <div class="horizontal-scrollable">
+        <center>
 
-        <div class="row row4 justify-content-around">
+
+        <div class="row row4 d-none d-sm-flex justify-content-around" style="width:95%; position:relative;">
 
           <div class="col-sm-6 col-md-4 pb-4">
             <div class="card card1">
@@ -590,11 +640,148 @@ border:none;
             </div>
 
           </div>
-            <a href="#" style="color:black; text-decoration: none; font-size:14px; font-weight:700; text-align: right; padding-top:30px; padding-bottom:30px;">for more plans...</a>
-        </div>
+
         </div>
 
-        <div class="row brands">
+        <div id="carouselExampleIndicators" class="carousel slide d-block d-sm-none" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner" role="listbox" style=" width:300px;">
+            <div class="carousel-item active">
+                  <div class="card card1">
+      
+                    
+      
+                    <div class="card-body">
+      
+                      <div class="text-end">
+                        <img src="car.png" style="width:60px; border:solid;border-color:rgb(163, 163, 163); border-width:1px; border-radius: 3px;;">
+                        </div>
+      
+                      <h class="card-title">
+                        4W Freedom Plan<br><span class="price">₹699</span>
+                      </h>
+                      <br>
+                      <br>
+                      <ul>
+                        <li>
+                          Free Accomodation
+                        </li>
+                        <li>
+                          One-time taxi support
+                        </li>
+                        <li class="no">
+                          incidental charges
+                        </li>
+                        <li class="no">
+                          no-insurance
+                        </li>
+                        <li>
+                          towing-services
+                        </li>
+                      </ul>
+                      <button class="blackbtn purbtn">Purchase Now</button>
+                    </div>
+                  </div>
+            </div>
+            <div class="carousel-item">
+  
+                  <div class="card card1">
+      
+                    
+      
+                    <div class="card-body">
+      
+                      <div class="text-end">
+                        <img src="bike.png" style="width:60px; border:solid; border-width:1px; border-color:rgb(163, 163, 163);  border-radius: 3px;;">
+                      </div>
+      
+                      <h class="card-title">
+                        2 Wheeler Pro<br><span class="price">₹1299</span>
+                      </h>
+      
+                      <br>
+                      <br>
+      
+                      <ul>
+                        <li>
+                          Free Accomodation
+                        </li>
+                        <li>
+                          One-time taxi support
+                        </li>
+                        <li class="no">
+                          incidental charges
+                        </li>
+                        <li>
+                          towing-services
+                        </li>
+                        <li>
+                          Avail in 7 days
+                        </li>
+                      </ul>
+      
+                      <button class="blackbtn purbtn">Purchase Now</button>
+      
+                    </div>
+                  </div>
+      
+              </div>
+            <div class="carousel-item">
+                
+                  <div class="card card1">
+      
+                   
+      
+                    <div class="card-body">
+      
+                      <div class="text-end">
+                        <img src="car.png" style=" width:60px; border:solid; border-width:1px; border-radius: 3px; border-color:rgb(163, 163, 163);">
+                      </div>
+                      
+                      <h class="card-title">
+                        4 Wheeler Pro<br><span class="price">₹2749</span>
+                      </h>
+      
+                      <br>
+                      <br>
+      
+                      <ul>
+                        <li>
+                          Free Accomodation
+                        </li>
+                        <li>
+                          One-time taxi support
+                        </li>
+                        <li>
+                          incidental charges
+                        </li>
+                        <li>
+                          towing-services
+                        </li>
+                        <li>
+                          Avail in 4 days
+                        </li>
+                      </ul>
+      
+                      <button class="blackbtn purbtn">Purchase Now</button>
+      
+                    </div>
+      
+                    
+                  </div>
+      
+            </div>
+          </div>
+        </div>
+        </center>
+        <a href="#" style="color:black; text-decoration: none; font-size:14px; font-weight:700; text-align: right; padding-top:30px; padding-bottom:30px;">for more plans...</a>
+        
+
+        <div class="row brands" style="width:98%; position:relative; left:2%;">
               <div class="col-md-3 align-self-center">
               <P3 style="font-size:13px; font-weight:bolder;">Trusted by more of India's best service providers</P3>
               </div>
@@ -617,13 +804,13 @@ border:none;
 
         </div>
 
-        <div class="row pt-5">
+        <div class="row pt-5" style="margin-left:20px;">
 
           
 
           <div class="col-md-4">
             <img style="width:250px;height:180px" src="write.jfif">
-            <p class="fontset3">country head (Shell corp)<br><span class="fontset4">Debanjali Sengupta</span></p>
+            <p class="fontset3"><br>country head (Shell corp)<br><span class="fontset4">Debanjali Sengupta</span></p>
           </div>
 
           <div class="col-md-8 align-self-center ">
@@ -634,7 +821,7 @@ border:none;
           
         </div>
 
-        <div class="row pt-5">
+        <div class="row pt-5" style="margin-left:20px;">
 
           <div class="d-none d-md-block col-md-8 align-self-center">
             <div style="border-left:solid 5px; border-color:#dddddd; padding-left:10px;">
@@ -644,7 +831,7 @@ border:none;
 
           <div class="col-md-4">
             <img style="width:250px;height:180px" src="read.jpg">
-            <p class="fontset3">country head (Shell corp)<br><span class="fontset4">Debanjali Sengupta</span></p>
+            <p class="fontset3"><br>country head (Shell corp)<br><span class="fontset4">Debanjali Sengupta</span></p>
           </div>
 
           <div class="d-md-none col-md-8 align-self-center">
@@ -656,13 +843,13 @@ border:none;
           
         </div>
 
-        <div class="row pt-5">
+        <div class="row pt-5" style="margin-left:20px;">
           
           
 
           <div class="col-md-4">
             <img style="width:250px;height:180px" src="use.jpg">
-            <p class="fontset3">country head (Shell corp)<br><span class="fontset4">Debanjali Sengupta</span></p>
+            <p class="fontset3"><br>country head (Shell corp)<br><span class="fontset4">Debanjali Sengupta</span></p>
           </div>
 
           <div class="col-md-8 align-self-center">
@@ -674,7 +861,7 @@ border:none;
 
         </div>
 
-        <div class="row pt-5">
+        <div class="row pt-5 d-none d-sm-flex">
           <div class="col-md-3 col-sm-6 pb-4">
             <div class="card card2 bg-dark">
               
@@ -739,6 +926,99 @@ border:none;
           </div>
 
         </div>
+
+        
+        <div class="row d-block d-sm-none">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner" role="listbox" style=" width:300px;">
+              <div class="carousel-item active">
+                <div class="col-md-3 col-sm-6 pb-4">
+                    <div class="card card2 bg-dark">
+                      
+                      <div class="card-body">
+                        <div>
+                          <img class="yellowimg" src="people.png">
+                        </div>
+                         <br>
+                        <h class="card-title">
+                          5000+<br>
+                          <span class="card2text">Service Partners</span>
+                        </h>
+        
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+    
+                <div class="col-md-3 col-sm-6 pb-4">
+                    <div class="card card2 bg-dark">
+                      <div class="card-body">
+                        <div>
+                          <img class="yellowimg" src="pin.png">
+                        </div> 
+                        <br>
+                        <h class="card-title ">
+                        16550+<br>
+                          <span class="card2text">Pin Codes</span>
+                        </h>
+        
+                      </div>
+                    </div>
+                  </div>   
+        
+                </div>
+              <div class="carousel-item">
+    
+                <div class="col-md-3 col-sm-6 pb-4">
+                    <div class="card card2 bg-dark">
+                      <div class="card-body">
+                        <div>
+                          <img class="yellowimg" src="wheel2.png">
+                        </div>
+        
+                          <br>
+                        <h class="card-title">
+                          1 Million+<br>
+                          <span class="card2text">Vehicle Mobilised</span>
+                        </h>
+        
+                      </div>
+                    </div>
+                  </div>    
+        
+              </div>
+    
+              <div class="carousel-item">
+    
+                <div class="col-md-3 col-sm-6 pb-4">
+                    <div class="card card2 bg-dark">
+                      <div class="card-body">
+                        <div>
+                          <img class="yellowimg" src="heart.png">
+                        </div><br>
+                        <h class="card-title">
+                          100000<br>
+                          <span class="card2text">Subscribed Customers</span> 
+                        </h>
+        
+                      </div>
+                    </div>
+                  </div>    
+        
+            </div>
+    
+            </div>
+          </div>
+        </div>
+
+       
 
         <div class="row endorsement">
          
@@ -967,7 +1247,7 @@ border:none;
         <h class="fontset1">Our board Members</h>
       </div>
 
-      <div class="row d-flex justify-content-center pb-5">
+      <div class="row d-none d-sm-flex justify-content-center pb-5">
         <div class="col-md-4 pb-5">
           <div class="card card3">
             <div class="card-body" style="text-align:center;">
@@ -996,7 +1276,7 @@ border:none;
 
         <div class="w-100"></div>
 
-        <div class="col-md-4 ">
+        <div class="col-md-4 pb-5">
           <div class="card card3">
             <div class="card-body" style="text-align:center;">
 
@@ -1072,6 +1352,119 @@ border:none;
 
 
       </div>
+
+      <div class="row d-block d-sm-none">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner" role="listbox" style=" width:300px;">
+            <div class="carousel-item active">
+              <div class="col-md-4 pb-5">
+                  <div class="card card3">
+                    <div class="card-body" style="text-align:center;">
+        
+                        <div>
+                        <img src="profile2.png" style="width:60px; margin-right:10px; padding-bottom: 10px;;">
+                        </div>
+                        <div>
+                          <h style="font-size:16px; font-weight:bold">Vimal Singh SV</h>
+                          <p style="font-size:small; font-weight:600; color:rgb(116, 111, 111)">Founder & CEO<br>ReadyAssist</p>
+                        </div>
+        
+                        <div class="socials">
+                          <i class="fa fa-facebook"></i>
+                          <i class="fa fa-instagram"></i>
+                          <i class="fa fa-twitter"></i>
+                          <i class="fa fa-linkedin"></i>
+                        </div>
+                      
+        
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4 pb-5">
+                  <div class="card card3">
+                    <div class="card-body" style="text-align:center;">
+        
+                        <div>
+                        <img src="profile2.png" style="width:60px; margin-right:10px; padding-bottom: 10px;;">
+                        </div>
+                        <div>
+                          <h style="font-size:16px; font-weight:bold">Vijay Sambamurthi</h>
+                          <p style="font-size:small; font-weight:600; color:rgb(116, 111, 111)">Founder & Managing Partner<br>Lexygen</p>
+                        </div>
+        
+                        <div class="socials">
+                          <i class="fa fa-facebook"></i>
+                          <i class="fa fa-instagram"></i>
+                          <i class="fa fa-twitter"></i>
+                          <i class="fa fa-linkedin"></i>
+                        </div>
+                      
+        
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4 pb-5">
+                  <div class="card card3">
+                    <div class="card-body" style="text-align:center;">
+        
+                        <div>
+                        <img src="profile2.png" style="width:60px; margin-right:10px; padding-bottom: 10px;;">
+                        </div>
+                        <div>
+                          <h style="font-size:16px; font-weight:bold">Vivek Subramaniam</h>
+                          <p style="font-size:small; font-weight:600; color:rgb(116, 111, 111)">Founder & CEO<br>AltLifeLab</p>
+                        </div>
+        
+                        <div class="socials">
+                          <i class="fa fa-facebook"></i>
+                          <i class="fa fa-instagram"></i>
+                          <i class="fa fa-twitter"></i>
+                          <i class="fa fa-linkedin"></i>
+                        </div>
+                      
+        
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="col-md-4">
+                  <div class="card card3">
+                    <div class="card-body" style="text-align:center;">
+        
+                        <div>
+                        <img src="profile2.png" style="width:60px; margin-right:10px; padding-bottom: 10px;;">
+                        </div>
+                        <div>
+                          <h style="font-size:16px; font-weight:bold">Satish Grampurohit</h>
+                          <p style="font-size:small; font-weight:600; color:rgb(116, 111, 111)">Angel Inverstor & Advisor<br>&nbsp;</p>
+                        </div>
+        
+                        <div class="socials">
+                          <i class="fa fa-facebook"></i>
+                          <i class="fa fa-instagram"></i>
+                          <i class="fa fa-twitter"></i>
+                          <i class="fa fa-linkedin"></i>
+                        </div>
+                      
+        
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
       
       <div class="row justify-content-center pb-5 pt-5">
 
@@ -1090,7 +1483,7 @@ border:none;
           <div class="text-center">
           <img class="blogimg" src="type.jpg">
           </div>
-          <p style="font-size:11px; font-weight:700; margin-right:45px; margin-left:40px;">Shell with ReadyAssist to set up quick lube change sites across india.<br>&nbsp;</p>
+          <p style="font-size:11px; font-weight:700; margin-right:45px; margin-left:40px;">Shell with ReadyAssist to set up quick lube change sites across india.<br></p>
           <a href="#" style="font-size:small; font-weight:700; margin-left:40px; text-decoration: none; color:black;">ET Auto.com</a>
         </div>
 
@@ -1119,7 +1512,7 @@ border:none;
 
       </div>
 
-      <div class="row bg-dark" style="background-image: linear-gradient(to top right, #ffd65b, #facc43); border-radius:13px; padding-top:30px; width:100%; padding:30px;">
+      <div class="row bg-dark" style="background-image: linear-gradient(to top right, #ffd65b, #facc43); border-radius:13px; padding-top:30px; width:100%; padding:30px; position:relative; left:15px;">
 
         <h style="font-size: 24px;font-weight: bolder; text-align: center;">One of the leading 24/7 roadside assistance service provider for bikes & cars across India.</h><br><br><br><br>
         <p style="font-size:9px;">ReadyAssist provides 24/7 on the spot breakdown support, flat tyre puncture repairs, fixes for starting problems, battery jumpstart & towing service to customers through our annual subscriptions & on-demand. ReadyAssist services are available across any nook and corner of India to our customers through the subscription model. Customers in cities like Bengaluru, Mumbai, Mysore, Gurugram, Delhi, Pune, Chennai, Hyderabad, Jaipur, Ahmedabad, Indore, Patna, Kolkata, Bhuvaneshwar, Chandigarh, Udaipur, Surat, Nagpur, Nasik, Vishakapatnam, Vijayawada, Coimbatore, Mangalore, Trivandrum, Kochi, Calicut, Guwahati, Goa, Pondicherry & Lucknow can avail our services through an on-demand model as well.<br><br>
@@ -1131,7 +1524,7 @@ border:none;
 
         <div style="position:relative; top:20px;" class="col-md-12 d-none d-sm-none d-md-flex justify-content-around">
 
-          <div class="endimg bg-light justify-content-center align-self-center">
+          <div class="endi justify-content-center align-self-center">
 
           
             
@@ -1186,6 +1579,8 @@ border:none;
         </div>
 
       </div>
+
+    </div>
 
       
 
